@@ -12,7 +12,7 @@
 /symfony.lock
 ###< symfony/framework-bundle ###
 
-vscode/*
+.vscode/*
 
 ###> symfony/phpunit-bridge ###
 .phpunit
