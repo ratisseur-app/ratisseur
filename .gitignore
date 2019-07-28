@@ -3,10 +3,41 @@
 /.env.local
 /.env.local.php
 /.env.*.local
+/.env.test
+/.env.dist
 /public/bundles/
 /var/
 /vendor/
+/composer.lock
+/symfony.lock
 ###< symfony/framework-bundle ###
 
-composer.lock
-symfony.lock
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/web-server-bundle ###
+/.web-server-pid
+###< symfony/web-server-bundle ###
+.idea/
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
+
+/public/coverage
+
+###> squizlabs/php_codesniffer ###
+/.phpcs-cache
+/phpcs.xml
+###< squizlabs/php_codesniffer ###
+
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+/public/build/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###
