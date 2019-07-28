@@ -12,6 +12,8 @@
 /symfony.lock
 ###< symfony/framework-bundle ###
 
+vscode/*
+
 ###> symfony/phpunit-bridge ###
 .phpunit
 /phpunit.xml
