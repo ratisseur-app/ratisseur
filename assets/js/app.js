@@ -9,7 +9,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <p>C'est Ok !</p>
+                <p>C'est Ok ! </p>
             </div>
         )
     }
