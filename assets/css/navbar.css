@@ -1,0 +1,22 @@
+.nav-links{
+    height: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.nav-links a {
+    display: block;
+    padding: 1.2rem 0;
+    text-decoration: none !important;
+    color: #fff !important;
+    text-align: center !important;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-links a:hover{
+    background-color: #aaaaaa;
+}
+.show-nav {
+    height: auto;
+}
