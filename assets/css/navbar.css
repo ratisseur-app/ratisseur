@@ -1,22 +1,131 @@
-.nav-links{
-    height: 0;
-    overflow: hidden;
-    list-style-type: none;
+.sideBarMenuContainer {
+    position: fixed;
+    height: 100%;
 }
 
-.nav-links a {
-    display: block;
-    padding: 1.2rem 0;
-    text-decoration: none !important;
-    color: #fff !important;
-    text-align: center !important;
-    font-size: 1rem;
-    font-weight: 600;
+.userMenu {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
 }
 
-.nav-links a:hover{
-    background-color: #aaaaaa;
+nav.sidebar :global(.navbar-brand) :global(.glyphicon) {
+    margin-right: 0;
 }
-.show-nav {
-    height: auto;
+
+nav.sidebar {
+    -webkit-transition: margin 200ms ease-out;
+    -moz-transition: margin 200ms ease-out;
+    -o-transition: margin 200ms ease-out;
+    transition: margin 200ms ease-out;
+}
+
+/* .....NavBar: Icon only with coloring/layout.....*/
+
+/*small/medium side display*/
+@media ( min-width : 768px) {
+
+
+    /*Center Brand*/
+    nav.sidebar. :global(navbar).sidebar>.container :global(.navbar-brand), :global(.navbar)>:global(.container-fluid) :global(.navbar-brand)
+    {
+        margin-left: 0;
+    }
+    /*Center Brand*/
+    nav.sidebar :global(.navbar-brand), nav.sidebar :global(.navbar-header) {
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /*Center Icons*/
+    nav.sidebar a {
+        padding-right: 13px;
+    }
+
+    /*adds border top to first nav box */
+    nav.sidebar :global(.navbar-nav)>li:first-child {
+        border-top: 1px #e5e5e5 solid;
+    }
+
+    /*adds border to bottom nav boxes*/
+    nav.sidebar :global(.navbar-nav)>li {
+        border-bottom: 1px #e5e5e5 solid;
+    }
+
+    /* Colors/style dropdown box*/
+    nav.sidebar :global(.navbar-nav) :global(.open) :global(.dropdown-menu) {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    /*allows nav box to use 100% width*/
+    nav.sidebar :global(.navbar-collapse), nav.sidebar :global(.container-fluid) {
+        padding: 0;
+    }
+
+    /*colors dropdown box text */
+    :global(.navbar-inverse) :global(.navbar-nav) :global(.open) :global(.dropdown-menu)>li>a {
+        color: #777;
+    }
+
+    /*gives sidebar width/height*/
+    nav.sidebar {
+        width: 200px;
+        height: 100%;
+        margin-left: -160px;
+        float: left;
+        z-index: 8000;
+        margin-bottom: 0;
+    }
+
+    /*give sidebar 100% width;*/
+    nav.sidebar li {
+        width: 100%;
+    }
+
+    /* Move nav to full on mouse over*/
+    nav.sidebar:hover {
+        margin-left: 0;
+    }
+    /*for hiden things when navbar hidden*/
+    :global(.forAnimate) {
+        opacity: 0;
+    }
+}
+
+/* .....NavBar: Fully showing nav bar..... */
+@media ( min-width : 1330px) {
+
+    /*Show all nav*/
+    nav.sidebar {
+        margin-left: 0;
+        float: left;
+    }
+    /*Show hidden items on nav*/
+    nav.sidebar :global(.forAnimate) {
+        opacity: 1;
+    }
+}
+
+nav.sidebar :global(.navbar-nav) :global(.open) :global(.dropdown-menu)>li>a:hover, nav.sidebar :global(.navbar-nav) :global(.open) :global(.dropdown-menu)>li>a:focus
+{
+    color: #CCC;
+    background-color: transparent;
+}
+
+nav:hover :global(.forAnimate) {
+    opacity: 1;
+}
+
+section {
+    padding-left: 15px;
 }

@@ -41,7 +41,6 @@ class FormRegister extends Component{
             password: this.state.password
         };
         var x = ApiSecurity.register(newUser);
-        console.log(x);
     }
 
     render(){
@@ -84,6 +83,7 @@ class FormRegister extends Component{
                                name="password"
                                id="r-password"
                                value={this.state.password}
+                               autoComplete="off"
                                onChange={this.handleChange} />
                     </div>
                     <div className="form-group">
